@@ -1,6 +1,5 @@
 /** @jsx h */
 import { h } from "preact";
-import { useState } from "preact/hooks";
 import { tw } from "@twind";
 import { PageProps, Handlers } from "$fresh/server.ts";
 import { config } from "https://deno.land/x/dotenv@v3.2.0/mod.ts";
