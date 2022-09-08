@@ -52,7 +52,6 @@ export const handler: Handlers = {
   },
 };
 export default function Home(props: PageProps) {
-  const [vid, setVid] = useState<string | undefined>();
   return (
     <div class={tw`bg-[#2a2640]`}>
       <div
@@ -70,9 +69,9 @@ export default function Home(props: PageProps) {
         </p>
         <Videos data={props.data.items} />
       </div>
-      <a href="https://github.com/Chadtao206/fresh-deno-fun" target="_blank">
+      <a href="https://github.com/Chadtao206/fresh-deno-fun" class={tw`fixed bottom-4 left-4`} target="_blank">
         <button
-          class={tw`fixed p-1 bottom-4 left-4 rounded-2xl bg-white hover:bg-gray-300 shadow-lg`}
+          class={tw`p-1 rounded-2xl bg-white hover:bg-gray-300 shadow-lg`}
         >
           <svg
             stroke-width="0"
